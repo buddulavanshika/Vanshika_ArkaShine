@@ -6,6 +6,7 @@ from matplotlib import colors as mcolors
 
 # Load the model and scaler
 model = joblib.load("best_knn_model.pkl")
+
 scaler = joblib.load("scaler.pkl")
 target_columns = joblib.load("target_columns.pkl")  # List of target nutrient names
 feature_columns = joblib.load("feature_names.pkl")  # List of 18 features
@@ -41,3 +42,6 @@ if st.button("Predict Nutrient Levels"):
     for bar, value in zip(bars, predicted_values.values()):
         ax.text(bar.get_width(), bar.get_y() + bar.get_height() / 2, f'{value:.2f}', va='center')
     st.pyplot(fig)
+import os
+st.write("Working directory:", os.getcwd())
+st.write("Files here:", os.listdir())
