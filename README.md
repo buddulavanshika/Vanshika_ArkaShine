@@ -63,7 +63,7 @@ A user-friendly web interface was created using Streamlit, allowing users to:
 
 ```bash
 git clone https://github.com/buddulavanshika/Vanshika_Arkashine.git
-cd Model_for_interface
+
 ```
 2. Install Dependencies:
 ```bash
