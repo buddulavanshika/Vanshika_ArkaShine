@@ -10,6 +10,7 @@ scaler = joblib.load("scaler.pkl")
 target_columns = joblib.load("target_columns.pkl")  # List of target nutrient names
 feature_columns = joblib.load("feature_names.pkl")  # List of 18 features
 
+
 st.title("🌾 Soil Nutrient Predictor")
 
 st.markdown("Enter the reflectance values for the following 18 wavelengths:")
